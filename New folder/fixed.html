@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        
+        *{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         font-family: 'Montserrat', sans-serif;
+         list-style: none;
+         }
+        
+         a{
+            text-decoration: inherit;
+            color: inherit;
+            
+         }
+         li{
+            display: inline-block;
+            
+         }
+         body{
+            display: grid;
+            height: 2400px;
+            grid-template-areas: "header"
+                                 "navbar"
+                                 "container"
+                                 "footer"
+                                 "grid" ;
+            grid-template-rows: 35px 65px 6fr 3fr 1fr;
+        }
+                                          /*************header**********/                   
+        .header{
+            grid-area: "header";
+            background-color: rgb(135, 222, 203);
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            align-items: center;
+
+        }
+        .header .container ul li{
+             margin: 5px;
+            padding:10px;
+            cursor: pointer;
+            background-color: rgba(161, 159, 159, 0.568);
+            border-radius: 10px;
+            
+        }
+        .header .container ul li:hover{
+             opacity: 0.6;
+             color: aliceblue;}
+
+                                           /****-navbar-**/
+
+
+    .navbar{
+            grid-area: "navbar";
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center; 
+            position: sticky;
+            top: 1px;
+            z-index: 9;
+            background-color:rgb(255, 255, 255);
+            
+ } 
+    
+     
+          .navbar .nav-links{
+            
+
+          } 
+
+          .navbar .nav-links ul li ul li{
+            display: block;
+          }
+          .navbar .nav-links ul li a{
+            padding: 15px;     
+          }
+          .navbar .nav-links ul li a i{
+            padding-right:9px ;
+            color: rgba(19, 170, 207, 0.568);
+          }
+          .navbar .nav-center img{
+            height: 100%;
+            width: 350px;
+            border-radius: 30px;
+
+
+          }
+          .navbar .nav-right ul li a{
+            padding: 17px;
+          }
+          .navbar .sub-menu{
+            display: none;
+
+          }
+          .navbar .nav-right ul li a i{
+            padding-right:9px ;
+          }
+          .navbar .nav-links ul li:hover .sub-menu-1{
+            display: block;
+            
+          }
+                                                 /****container******/
+        
+           
+        body>.container{
+
+        }
+        .container__content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 400px;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.288);
+        }
+        .container__content .container__content__main{
+            height: 100%;
+            background: url("79d413a7-497a-4709-a379-049459d91fab.jpg") center;
+            box-shadow: inset;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 55%
+            
+        }
+        .container__content .container__content__aside{
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
+            justify-content: center;
+            width: 45%;
+            
+            
+        }
+        .container__content .container__content__aside h1{
+            color: rgba(24, 17, 17, 0.692);
+        }
+        .container__content .container__content__aside .btn:hover{
+            width: 50px;
+            background-color: rgba(0, 0, 0, 0.438);
+            color: beige;
+        }               
+                     /**********Grid************/
+        .grid{
+            grid-area: "grid";
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 0 150px;
+            border: 1px solid red;
+        }
+        .grid .box1{
+            grid-column: 1/span 2;
+            background-image: linear-gradient(to right, red, green);
+        }
+        .grid  .box2{
+            grid-row: 1/span 2
+        }
+        .grid .box2{
+            background-image: linear-gradient(to bottom, black,red);
+            
+        }
+   
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li><a href="">DRmadwill</a></li>
+                <li>
+                    <select name="ENG" id="">
+                    <option value="0">English</option>
+                    <option value="1">Azerbaijani</option>
+                   </select>
+               </li>
+            </ul>
+        </div>
+    </header>
+        <div class="navbar">
+            <div class="nav-center">
+                <img src="Minimalist Digital Education Logo  (300 × 150 px) (200 × 100 px) (300 × 150 px) (2).jpg" alt="">
+               </div>
+                
+                <div class="nav-links">
+               <ul>
+                    <li><a href="" class="nav-left__links__link" ><i class="fa-solid fa-house-flag "></i>Home</a></li>
+                    <li><a href="" class="nav-left__links__link" ><i class="fa-solid fa-phone-volume "></i>Contact</a>
+                    <div class="sub-menu sub-menu-contact">
+                        <ul>
+                            <li><a href="">+994706202498</a></li>
+                            <li><a href="">Dershane.az@mail.ru</a></li>
+                        </ul>
+                    </div>
+                </li>
+                    <li><a href="" class="nav-left__links__link" ><i class="fa-solid fa-trophy "></i>About</a>
+                    <div class="sub-menu sub-menu-about">
+                        <ul>
+                            <li><a href="">who are we</a></li>
+                            <li><a href="">what is our power</a></li>
+                            <li><a href="">where are we</a></li>
+                        </ul>
+                    </div></li>
+                    <li><a href="" class="nav-left__links__link" ><i class="fa-solid fa-earth-europe "></i>Lessons</a></li>
+                
+                    </ul>
+            </div>
+         
+                <div class="nav-right">
+                <ul >
+                    <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Log-in</a></li>
+                    <li><a href="#"><i class="fa-solid fa-user-plus"></i>Sign up</a></li>
+                </ul>
+            </div>
+        </div>
+    <div class="container">
+    <section class="container__intro">
+        <div style="position: relative; width: 100%; padding-top: 46.2500%;
+        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);  margin-bottom: 0.9em; overflow: hidden;
+        border-top-right-radius:3px ; will-change: transform;">
+         <iframe loading="lazy" style="position: absolute; width: 100%; height: 60%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+           src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMwvmy8pg&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+         </iframe>
+       </div>
+       <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFMwvmy8pg&#x2F;view?utm_content=DAFMwvmy8pg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Brown Simple Modern Creative Portofolio Front Designer Presentation Slide</a> by Elvin yusifov
+    </section>
+    <section class="container__content">
+        <div class="container__content__main">
+         
+        </div>
+        <div class="container__content__aside">
+            <h1 style="padding: 5px;">Speak with us !!!</h1>
+        <br>
+            <p style="padding: 10px 5px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quibusdam qui aspernatur alias quam vero praesentium?
+            </p>
+                <br>
+        <div class="btn" style="font-size: 26px ;color: rgb(53, 53, 53);border: 1px solid rgba(0, 0, 0, 0.267);width:160px; border-radius: 20px; text-align: center;padding: 5px;"><a href="">Join us <i class="fa-solid fa-user-plus"></i></a>
+               
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="grid">
+        <div class="box   box1">1</div>
+        <div class="box   box2">2</div>
+        <div class="box   box3">3</div>
+        <div class="box   box4">4</div>
+        <div class="box   box5">5</div>
+        <div class="box   box6">6</div>
+        <div class="box   box6">7</div>
+        
+        
+       
+    </div>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

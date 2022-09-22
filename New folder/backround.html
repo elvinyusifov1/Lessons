@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .bg{
+            background-image: url("79d413a7-497a-4709-a379-049459d91fab.jpg");
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            letter-spacing: 2px;
+            position: relative;
+            background-attachment: fixed;
+        }
+        .bg h1{
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            color: antiquewhite;
+         }
+        .bg .mask{
+            position: absolute;
+            left: 0;
+            top: 0;
+            background-color: rgb(0, 0, 0);
+            height: 100vh;
+            opacity: .4;
+            width: 100%;
+        }
+        .content{
+            height: 1000px;
+            width: 100%;
+
+        }
+        .content .p1{
+            position: sticky;
+            top: 4px;
+            background:linear-gradient(to right,yellow,grey); 
+            z-index: 1;
+        }
+        .content .bg-2{
+            background: url("e88c1468-6726-4940-8e0b-63514daa4e29.jpg");
+            height: 60vh;
+            width: 100%;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+      
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="mask"></div>
+        <div class="bg__content">
+           
+            <h1>Lorem, ipsum.</h1>
+        </div>
+    </div>
+    <div class="content">
+        <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic, quos quisquam, quam distinctio delectus quae sequi autem mollitia qui obcaecati reprehenderit praesentium laboriosam dolor nisi consequuntur tempora consectetur voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic accusantium placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tempore animi nulla perferendis possimus illo dolore placeat hic nobis. Ex blanditiis fugiat ullam labore ad magni voluptatum eum vitae odit praesentium, distinctio at, voluptas natus vero repellat possimus animi ratione recusandae quo quam. Doloribus quae necessitatibus incidunt nemo quo?
+
+        </p>
+        <div class="bg-2"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore hic, quos quisquam, quam distinctio delectus quae sequi autem mollitia qui obcaecati reprehenderit praesentium laboriosam dolor nisi consequuntur tempora consectetur voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic accusantium placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim tempore animi nulla perferendis possimus illo dolore placeat hic nobis. Ex blanditiis fugiat ullam labore ad magni voluptatum eum vitae odit praesentium, distinctio at, voluptas natus vero repellat possimus animi ratione recusandae quo quam. Doloribus quae necessitatibus incidunt nemo quo?
+    </div>
+</body>
+</html>
